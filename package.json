@@ -1,4 +1,12 @@
 {
+  //组件自动引入规则
+  "easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
   "name": "uni-app-xiaotuxian",
   "version": "0.0.0",
   "author": {
@@ -63,6 +71,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3081220230802001",
     "@dcloudio/uni-mp-xhs": "3.0.0-alpha-3081220230802001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3081220230802001",
+    "@dcloudio/uni-ui": "^1.5.10",
     "pinia": "2.0.27",
     "pinia-plugin-persistedstate": "^3.2.0",
     "vue": "^3.2.47",
